@@ -25,7 +25,7 @@
             <div class="card-back">
                 <h2>Register</h2>
                 <form>
-                    <input type="text" class="input-box" placeholder="Your Name" id="name" required>
+                    <input type="text" class="input-box" placeholder="Your Name" id="name" required pattern="^(?!.*[0])(?!.*\d)[A-Za-z\s]+$">
                     <input type="email" class="input-box" placeholder="Your Email" id="email" required>
                     <input type="password" class="input-box" placeholder="Password" required minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
                     title="Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one number, and one special character (@ $ ! % * ? &)">
