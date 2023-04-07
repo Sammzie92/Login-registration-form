@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nunito+Sans:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="inner-box" id="card">
+            <div class="card-front">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" class="input-box" placeholder="Your Email" id="required">
+                    <input type="password" class="input-box" placeholder="Password" id="required">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button href="#" type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+                <a href="#">Forgot my Password</a>
+            </div>
+            <div class="card-back">
+                <h2>Register</h2>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your Name" id="required">
+                    <input type="email" class="input-box" placeholder="Your Email" id="required">
+                    <input type="password" class="input-box" placeholder="Password" id="required">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"><span>Remember Me</span>
+                </form>
+                <button type="button" class="btn" onclick="openLogin()">I have an account</button>
+                <a href="#">Forgot my Password</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    var card = document.getElementById("card");
+    function openRegister() {
+        card.style.transform = "rotateY(-180deg)";
+
+    }
+
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+
+        }
+
+</script>
+</body>
+</html>
