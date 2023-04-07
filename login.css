@@ -120,6 +120,9 @@ span{
     margin-top: 8px;
     text-transform: capitalize;
 }
+input span{
+    font-size: 15px;
+}
 
 
 /* Small screens (mobile) */
